@@ -12,9 +12,19 @@ var level = 0;
 //To check whether game started first time or not
 var started = true;
 
+//To detect mobile phone
+function detectMob() {
+    return ((window.innerWidth <= 1024) && (window.innerHeight <= 600));
+}
+
 //Starting of the game by pressing a key
 $(document).keypress(function () {
     if (started) {
+        if(detectMob) {
+            $(document).click(function (e) {
+                $(this).focus();
+            });
+        }
         nextSequence();
         started = false;
     }
