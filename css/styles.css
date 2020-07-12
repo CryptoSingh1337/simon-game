@@ -1,9 +1,9 @@
 body {
   text-align: center;
-  background-color: #011F3F;
+  background-color: #ec7263;
 }
 
-p {
+footer p {
   margin-top: 0;
   color: azure;
   font-family: 'Ubuntu Mono', monospace;
@@ -12,24 +12,23 @@ p {
 #level-title {
   font-family: 'Press Start 2P', cursive;
   font-size: 2rem;
-  margin:  5%;
-  color: #FEF2BF;
+  margin: 5%;
+  color: #ffffff;
 }
 
 .container {
   display: block;
   width: 50%;
-  margin: auto;
+  margin: 50px auto 70px;
 
 }
 
 .btn {
-  margin: 20px;
   display: inline-block;
   height: 150px;
   width: 150px;
   border: 10px solid black;
-  border-radius: 20%;
+  /* border-radius: 20%; */
 }
 
 .game-over {
@@ -39,23 +38,31 @@ p {
 
 .red {
   background-color: red;
+  border-top-right-radius: 100%;
 }
 
 .green {
   background-color: green;
+  border-top-left-radius: 100%;
 }
 
 .blue {
   background-color: blue;
+  border-bottom-right-radius: 100%;
 }
 
 .yellow {
   background-color: yellow;
+  border-bottom-left-radius: 100%;
 }
 
 .pressed {
   box-shadow: 0 0 20px white;
   background-color: grey;
+}
+
+.hide {
+  display: none;
 }
 
 @media screen and (max-width: 1024px) {
